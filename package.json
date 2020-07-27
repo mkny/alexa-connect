@@ -1,0 +1,31 @@
+{
+  "name": "alexa-connect",
+  "version": "0.0.1",
+  "description": "Alexa connection platform",
+  "main": "src/index.js",
+  "author": "Marcony Neves<desenvolvedor@me.com>",
+  "license": "MIT",
+  "scripts": {
+    "build": "babel src/ --out-dir dist --extensions .js,.jsx,.ts,.tsx",
+    "dev": "nodemon --inspect",
+    "start": "node dist/index.js"
+  },
+  "bin": {
+    "alexa-connect": "./dist/index.js"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.10.5",
+    "@babel/core": "^7.10.5",
+    "@babel/node": "^7.10.5",
+    "@babel/plugin-proposal-class-properties": "^7.10.4",
+    "@babel/preset-env": "^7.10.4",
+    "@babel/preset-typescript": "^7.10.4",
+    "@types/node": "^14.0.26",
+    "@typescript-eslint/eslint-plugin": "^3.7.0",
+    "@typescript-eslint/parser": "^3.7.0",
+    "babel-plugin-module-resolver": "^4.0.0",
+    "eslint": "^7.5.0",
+    "nodemon": "^2.0.4",
+    "typescript": "^3.9.7"
+  }
+}
